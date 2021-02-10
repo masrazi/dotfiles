@@ -28,8 +28,18 @@ super + Escape
 super + l
 	slock
 
-#
-# bspwm hotkeys
-#
+# volume control
+XF86AudioLowerVolume
+	volumeControl.sh down
+XF86AudioRaiseVolume
+	volumeControl.sh up
+XF86AudioMute
+	volumeControl.sh mute
+
+# brightness control
+XF86MonBrightnessDown
+	brightnessControl.sh down
+XF86MonBrightnessUp
+	brightnessControl.sh up
 
 
