@@ -1,0 +1,47 @@
+" Plugins will be downloaded under the specified directory.
+call plug#begin('~/.vim/plugged')
+
+" Declare the list of plugins.
+Plug 'preservim/NERDTree'
+Plug 'itchyny/lightline.vim', { 'on' : [] }
+Plug 'vim-airline/vim-airline'
+Plug 'ryanoasis/vim-devicons'
+Plug 'arcticicestudio/nord-vim'
+Plug 'artanikin/vim-synthwave84'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'gko/vim-coloresque'
+Plug 'lilydjwg/colorizer'
+
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
+
+"use { 'on': [] } to disable plugin with vim-plug, add comma before
+
+
+"set background=dark
+syntax enable
+
+" set Vim-specific sequences for RGB colors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+"enable angled for vim-airline
+let g:airline_powerline_fonts = 1
+
+colorscheme dracula
+
+set nocompatible
+if (has("termguicolors"))
+  set termguicolors
+endif
+
+"enable plugin vim-indent-guides
+"let g:indent_guides_enable_on_vim_startup = 1
+
+set laststatus=2
+set noshowmode
+set shiftwidth=4
+set tabstop=4
+
+:set number
