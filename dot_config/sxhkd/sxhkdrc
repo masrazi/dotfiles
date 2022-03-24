@@ -1,0 +1,79 @@
+
+
+#
+# wm independent hotkeys
+#
+
+# caps lock notification
+Caps_Lock
+	/home/razi/.local/bin/caps-notify.sh
+	
+# terminal emulator
+ctrl + alt + l
+	xfce4-terminal
+
+# kitty terminal
+ctrl + alt + k
+	kitty
+
+# program launcher
+#super + @space
+# take screenshot with flameshot
+Print
+	flameshot gui
+# search app using rofi
+super + r
+	rofi -show run
+# search xdg app using rofi
+super + p
+	rofi -show drun
+# show all window using rofi
+super + Tab
+	rofi -show window
+
+# switch open window using rofi
+#alt + Tab
+#	rofi -show window
+
+# launch Firefox
+ctrl + alt + f
+	firefox-esr & notify-send -i /home/razi/.icons/Papirus/22x22/apps/firefox.svg "Opening Firefox ..."
+
+# launch Thunar file manager
+super + n
+	thunar
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# lock the screen
+super + l
+	myfancy -t "Type Password"
+
+# lock screen i3lock-color script
+super + i
+	lock.sh	
+	
+# reboot the system
+super + Delete
+	reboot
+# shutdowm the system
+super + End
+	poweroff
+
+# volume control
+#XF86AudioLowerVolume
+#	volumeControl.sh down
+#XF86AudioRaiseVolume
+#	volumeControl.sh up
+#XF86AudioMute
+#	volumeControl.sh mute
+
+# brightness control
+#XF86MonBrightnessDown
+#	brightnessControl.sh down
+#XF86MonBrightnessUp
+#	brightnessControl.sh up
+
+
