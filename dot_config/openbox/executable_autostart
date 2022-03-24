@@ -1,0 +1,17 @@
+#
+# These things are run when an Openbox X Session is started.
+# You may place a similar script in $HOME/.config/openbox/autostart
+# to run user-specific things.
+#
+
+# Launch polybar via launch.sh
+$HOME/.config/polybar/launch.sh
+
+# Launch xfce4-notifyd
+(sleep 5s && /usr/lib/xfce4/notifyd/xfce4-notifyd) &
+
+# Launch Dock
+#(sleep 6s && cairo-dock -f) &
+
+
+
